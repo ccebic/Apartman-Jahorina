@@ -1,8 +1,12 @@
 import './App.css'
+import MainLayout from './layout/Index'
+import Router from './Router'
 
 function App() {
   return (
-    <div className="bg-red-500 text-[98px] text-center">Hello World!</div>
+    <div>
+      <Router />
+    </div>
   )
 }
 
