@@ -1,19 +1,14 @@
-import React from 'react'
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import {MainLayout} from './layout/Index'
-import Home from './pages/home'
-import Reservation from './pages/reservation'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { MainLayout } from './layout/Index';
+import { HomePage, ReservationPage } from './pages';
 
-export const Router = () => {
-  return (
-    <BrowserRouter>
-        <MainLayout>
-            <Routes>
-                    <Route path="/" element={<Home />}></Route>
-                    <Route path="/reservation" element={<Reservation />}></Route>
-            </Routes>
-        </MainLayout>
-    </BrowserRouter>
-  )
-}
-
+export const Router = () => (
+   <BrowserRouter>
+      <MainLayout>
+         <Routes>
+            <Route path="/" element={<HomePage />}></Route>
+            <Route path="/reservation" element={<ReservationPage />}></Route>
+         </Routes>
+      </MainLayout>
+   </BrowserRouter>
+);
