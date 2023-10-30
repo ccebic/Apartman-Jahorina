@@ -1,13 +1,10 @@
 import './App.css'
-import MainLayout from './layout/Index'
-import Router from './Router'
+import {Router} from './Router'
 
-function App() {
+export const  App = () => {
   return (
-    <div>
       <Router />
-    </div>
   )
 }
 
-export default App
+

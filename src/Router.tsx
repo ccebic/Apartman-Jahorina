@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import MainLayout from './layout/Index'
+import {MainLayout} from './layout/Index'
 import Home from './pages/home'
 import Reservation from './pages/reservation'
 
-const Router = () => {
+export const Router = () => {
   return (
     <BrowserRouter>
         <MainLayout>
@@ -17,4 +17,3 @@ const Router = () => {
   )
 }
 
-export default Router
