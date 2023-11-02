@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      oleo: ["Oleo Script", "cursive"]
+    }
   },
   plugins: [],
   mode: 'jit',
