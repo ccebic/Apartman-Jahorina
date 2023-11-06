@@ -1,4 +1,5 @@
-import { AboutSectionJelena } from '../components/home/aboutJelena';
+import { AboutSectionJelena } from '../components/home/AboutJelena';
+import { CounterUp } from '../components/home/Counter';
 import background from '../images/background4.webp';
 import curve from '../images/rotten-curve-5.png';
 
@@ -52,6 +53,7 @@ export const HomePage = () => {
             </a>
          </div>
          <AboutSectionJelena />
+         <CounterUp />
       </div>
    );
 };

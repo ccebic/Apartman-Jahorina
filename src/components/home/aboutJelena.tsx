@@ -1,11 +1,11 @@
-import { AboutSectionLayout } from './aboutLayout';
+import { AboutSectionLayout } from './AboutLayout';
+import Bcg from '../../images/vilaJelena/bcg-3.webp';
 import Ione from '../../images/vilaJelena/jelena8-min.webp';
 import Itwo from '../../images/vilaJelena/jelena9-min.webp';
-import Ithree from '../../images/vilaJelena/jelena10-min.webp';
-import Ifour from '../../images/vilaJelena/jelena11-min.webp';
 import Ifive from '../../images/vilaJelena/jelena6-min.webp';
+import Ifour from '../../images/vilaJelena/jelena11-min.webp';
+import Ithree from '../../images/vilaJelena/jelena10-min.webp';
 import BigPhoto from '../../images/vilaJelena/jelena13-min.webp';
-import Bcg from '../../images/vilaJelena/bcg-3.webp';
 
 export const AboutSectionJelena = () => {
    const background = {
