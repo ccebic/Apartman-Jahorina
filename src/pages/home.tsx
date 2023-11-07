@@ -55,5 +55,3 @@ export const HomePage = () => {
       </div>
    );
 };
-
-// this commit will
