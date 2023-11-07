@@ -7,10 +7,8 @@ type LinkProp = {
 };
 
 export const FooterLink = ({ href, text }: LinkProp) => (
-   <li>
-      <a href={href} className="footer-link-item text-cyan-500 hover:rounded-md duration-200 py-2 px-3 border-2 border-cyan-500">
-         {text}
-      </a>
+   <li className="footer-link-item text-cyan-500 hover:rounded-md duration-200 py-2 px-3 border-2 border-cyan-500">
+      <a href={href}>{text}</a>
    </li>
 );
 
