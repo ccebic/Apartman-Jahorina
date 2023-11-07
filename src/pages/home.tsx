@@ -1,1 +1,1 @@
-export const HomePage = () => <h1>home</h1>;
+export const HomePage = () => <div className="h-screen">Home</div>;
