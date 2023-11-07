@@ -1,24 +1,24 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Scrollbar, Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Scrollbar, Navigation } from 'swiper/modules';
 
 export interface AboutImages {
-   ione: string;
-   itwo: string;
-   ithree: string;
-   ifour: string;
-   ifive: string;
+   iOne: string;
+   iTwo: string;
+   iThree: string;
+   iFour: string;
+   iFive: string;
 }
 
-export const SwiperAbout: React.FC<AboutImages> = ({ ione, itwo, ithree, ifour, ifive }) => {
+export const SwiperAbout = ({ iOne, iTwo, iThree, iFour, iFive }: AboutImages) => {
    const slideData = [
-      { src: ione, alt: 'Apartmani Jahorina' },
-      { src: itwo, alt: 'Apartmani Jahorina' },
-      { src: ithree, alt: 'Apartmani Jahorina' },
-      { src: ifour, alt: 'Apartmani Jahorina' },
-      { src: ifive, alt: 'Apartmani Jahorina' },
+      { src: iOne, alt: 'Apartmani Jahorina' },
+      { src: iTwo, alt: 'Apartmani Jahorina' },
+      { src: iThree, alt: 'Apartmani Jahorina' },
+      { src: iFour, alt: 'Apartmani Jahorina' },
+      { src: iFive, alt: 'Apartmani Jahorina' },
    ];
 
    return (

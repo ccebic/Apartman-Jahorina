@@ -1,6 +1,6 @@
 import { Curve } from '../components/home/Curve';
 import background from '../images/background4.webp';
-import { ButtonA, ButtonB } from '../components/home/Button';
+import { Button } from '../components/home/Button';
 import { AboutSectionJelena } from '../components/home/aboutJelena';
 
 export const HomePage = () => {
@@ -17,7 +17,7 @@ export const HomePage = () => {
 
    const decorationClass = 'absolute top-[50%] -translate-y-[50%] h-1 w-6 bg-cyan-500 shadow-md';
 
-   const BtnClass = 'uppercase text-cyan-500 absolute left-1/2 bottom-7 font-medium -translate-x-1/2';
+   const ReadMoreClass = 'uppercase text-cyan-500 absolute left-1/2 bottom-7 font-medium -translate-x-1/2';
 
    return (
       <div>
@@ -38,14 +38,15 @@ export const HomePage = () => {
                </div>
 
                <div className="flex flex-col md:flex-row uppercase gap-4 items-center">
-                  <ButtonA text="book now" href="#" />
-                  <ButtonB text="check the prices" href="#" />
+                  <Button text="book now" href="#" outline={false} decoration={true} />
+                  <Button text="check the prices" href="#" outline={true} decoration={false} />
                </div>
             </div>
 
-            <a href="#" className={`${BtnClass}`}>
+            <a href="#" className={`${ReadMoreClass}`}>
                read more
             </a>
+
             <Curve />
          </main>
          <AboutSectionJelena />
