@@ -1,7 +1,6 @@
 import { Curve } from '../components/home/Curve';
 import background from '../images/background4.webp';
-import { Button } from '../components/home/Button';
-import { AboutSectionJelena } from '../components/home/aboutJelena';
+import { Button, AboutJelena } from '../components/home/index';
 
 export const HomePage = () => {
    const HomeStyle = {
@@ -38,8 +37,12 @@ export const HomePage = () => {
                </div>
 
                <div className="flex flex-col md:flex-row uppercase gap-4 items-center">
-                  <Button text="book now" href="#" outline={false} decoration={true} />
-                  <Button text="check the prices" href="#" outline={true} decoration={false} />
+                  <Button href="#" outline={false} decoration={true}>
+                     book now
+                  </Button>
+                  <Button href="#" outline={true} decoration={false}>
+                     check the prices
+                  </Button>
                </div>
             </div>
 
@@ -49,7 +52,7 @@ export const HomePage = () => {
 
             <Curve />
          </main>
-         <AboutSectionJelena />
+         <AboutJelena />
       </div>
    );
 };

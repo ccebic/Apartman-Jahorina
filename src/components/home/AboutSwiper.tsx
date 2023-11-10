@@ -1,6 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
@@ -8,7 +9,7 @@ export interface AboutImages {
    images: string[];
 }
 
-export const SwiperAbout = ({ images }: AboutImages) => {
+export const AboutSwiper = ({ images }: AboutImages) => {
    return (
       <Swiper
          spaceBetween={10}

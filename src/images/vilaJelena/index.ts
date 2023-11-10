@@ -8,13 +8,11 @@ import BigPhoto from './jelena13-min.webp';
 
 
 const images = [
-    Bcg,
     Ione,
     Itwo,
     Ifive,
     Ifour,
     Ithree,
-    BigPhoto,
 ]
 
 export { BigPhoto, Bcg, images }

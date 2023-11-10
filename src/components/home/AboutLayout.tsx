@@ -1,16 +1,15 @@
-import { BoxesAbout } from './boxAbout';
-import { Button } from '../../components/home/Button';
-import { AboutImages, SwiperAbout } from './aboutSwiper';
+import { AboutImages } from './AboutSwiper';
+import { AboutSwiper, BoxesAbout, Button } from '.';
 
 interface AboutSectionProp extends AboutImages {
-   heading: string;
    text: string;
+   heading: string;
    priceOne: string;
    priceTwo: string;
    bigImage: string;
 }
 
-export const AboutSectionLayout = ({ heading, text, images, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
+export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
    const headingTextClass = 'text-center text-5xl text-sky-800 font-bold md:text-left md:text-7xl lg:text-center';
    const shadow = { boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 13px 5px' };
    const priceClass = 'bg-cyan-500 text-center font-medium';
@@ -31,15 +30,19 @@ export const AboutSectionLayout = ({ heading, text, images, priceOne, priceTwo, 
             </div>
 
             <div className="mt-10 mb-4 ">
-               <SwiperAbout images={images} />
+               <AboutSwiper images={images} />
             </div>
 
             <p className={`${priceClass}`}>{priceOne}</p>
             <p className={`${priceClass} mt-2`}>{priceTwo}</p>
 
             <div className="flex align-middle uppercase justify-center mt-5 gap-5">
-               <Button href="#" text="book now" decoration={true} outline={false} />
-               <Button href="#" text="booking.com" decoration={false} outline={true} />
+               <Button href="#" decoration={true} outline={false}>
+                  book now
+               </Button>
+               <Button href="#" decoration={false} outline={true}>
+                  booking.com
+               </Button>
             </div>
          </div>
       </main>

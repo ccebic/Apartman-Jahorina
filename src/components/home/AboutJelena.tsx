@@ -1,8 +1,7 @@
-import { AboutSectionLayout } from './aboutLayout';
+import { AboutLayout, Curve } from '.';
 import { images, BigPhoto, Bcg } from '../../images/vilaJelena';
-import { Curve } from './Curve';
 
-export const AboutSectionJelena = () => {
+export const AboutJelena = () => {
    const background = {
       backgroundImage: `url(${Bcg})`,
    };
@@ -13,7 +12,7 @@ export const AboutSectionJelena = () => {
    return (
       <main style={background} className="bg-cover bg-center relative bg-no-repeat">
          <div className="container p-3 mx-auto">
-            <AboutSectionLayout
+            <AboutLayout
                heading="Vila Jelena"
                text={textForJelena}
                images={images}
