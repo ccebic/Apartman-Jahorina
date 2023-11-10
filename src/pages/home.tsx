@@ -3,7 +3,7 @@ import background from '../images/background4.webp';
 import { Button, AboutJelena } from '../components/home/index';
 
 export const HomePage = () => {
-   const HomeStyle = {
+   const homeStyle = {
       backgroundImage: `url(${background})`,
    };
 
@@ -16,11 +16,11 @@ export const HomePage = () => {
 
    const decorationClass = 'absolute top-[50%] -translate-y-[50%] h-1 w-6 bg-cyan-500 shadow-md';
 
-   const ReadMoreClass = 'uppercase text-cyan-500 absolute left-1/2 bottom-7 font-medium -translate-x-1/2';
+   const readMoreClass = 'uppercase text-cyan-500 absolute left-1/2 bottom-7 font-medium -translate-x-1/2';
 
    return (
       <div>
-         <main className="relative bg-sky-500 h-screen bg-cover bg-center" style={HomeStyle}>
+         <main className="relative bg-sky-500 h-screen bg-cover bg-center" style={homeStyle}>
             <div className="absolute top-0 left-0 h-full w-full bg-black/[0.3]"></div>
             <div className="cointainer flex flex-col justify-center items-center h-[90vh]">
                <div className="relative">
@@ -29,7 +29,7 @@ export const HomePage = () => {
                   <span className={`-right-[27px] ${decorationClass}`}></span>
                </div>
 
-               <div className={`${titleClass}`}>
+               <div className={titleClass}>
                   <h1 className="flex flex-col font-oleo my-5 gap-4 text-cyan-500">
                      <span style={textShadow}>Villa Jelena</span>
                      <span style={textShadow}>Villa Marina</span>
@@ -46,7 +46,7 @@ export const HomePage = () => {
                </div>
             </div>
 
-            <a href="#" className={`${ReadMoreClass}`}>
+            <a href="#" className={readMoreClass}>
                read more
             </a>
 

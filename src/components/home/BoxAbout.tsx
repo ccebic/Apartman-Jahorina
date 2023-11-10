@@ -6,7 +6,7 @@ export const BoxesAbout = () => {
    const boxClass = 'flex gap-2 align-middle uppercase self-center flex-wrap';
 
    return (
-      <div className={`${boxClass}`}>
+      <div className={boxClass}>
          <BoxAbout text="wi-fi" />
          <BoxAbout text="parking" />
          <BoxAbout text="ac" />

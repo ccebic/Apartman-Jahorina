@@ -22,7 +22,7 @@ export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImag
 
          <div className="flex-1 overflow-hidden">
             <div className="flex flex-col gap-5 text-black mb-30px backdrop-blur py-5 px-1 rounded-lg" style={shadow}>
-               <h2 className={`${headingTextClass}`}>{heading}</h2>
+               <h2 className={headingTextClass}>{heading}</h2>
                <BoxesAbout />
                <div className="font-bold leading-7 overflow-y-scroll lg:text-xl h-[400px] lg:[300px] tracking-widest">
                   <p className="px-3">{text}</p>
@@ -33,7 +33,7 @@ export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImag
                <AboutSwiper images={images} />
             </div>
 
-            <p className={`${priceClass}`}>{priceOne}</p>
+            <p className={priceClass}>{priceOne}</p>
             <p className={`${priceClass} mt-2`}>{priceTwo}</p>
 
             <div className="flex align-middle uppercase justify-center mt-5 gap-5">

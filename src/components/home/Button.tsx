@@ -15,7 +15,7 @@ export const Button = ({ children, href, outline, decoration }: ButtonProps) => 
    return (
       <a href={href} className={`${outline === false ? buttonFill : buttonOutline} ${button}`}>
          {children}
-         {decoration && <span className={`${buttonDecoration}`} />}
+         {decoration && <span className={buttonDecoration} />}
       </a>
    );
 };
