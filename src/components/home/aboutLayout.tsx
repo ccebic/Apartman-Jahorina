@@ -1,6 +1,6 @@
 import { Button } from './Button';
-import { BoxesAbout } from './BoxAbout';
-import { AboutImages, SwiperAbout } from './AboutSwiper';
+import { BoxesAbout } from './boxAbout';
+import { AboutImages, SwiperAbout } from './aboutSwiper';
 
 interface AboutSectionProp extends AboutImages {
    heading: string;

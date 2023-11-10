@@ -1,8 +1,8 @@
 import { Curve } from '../components/home/Curve';
-import background from '../images/background4.webp';
 import { Button } from '../components/home/Button';
-import { AboutSectionJelena } from '../components/home/AboutJelena';
+import background from '../images/background4.webp';
 import { CounterUp } from '../components/home/Counter';
+import { AboutSectionJelena } from '../components/home/aboutJelena';
 
 export const HomePage = () => {
    const HomeStyle = {
