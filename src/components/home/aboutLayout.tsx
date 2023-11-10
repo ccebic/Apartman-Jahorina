@@ -10,12 +10,10 @@ interface AboutSectionProp extends AboutImages {
    bigImage: string;
 }
 
-export const AboutSectionLayout = ({ heading, text, iOne, iTwo, iThree, iFour, iFive, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
-   const shadow = { boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 13px 5px' };
-
-   const priceClass = 'bg-cyan-500 text-center font-medium';
-
+export const AboutSectionLayout = ({ heading, text, images, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
    const headingTextClass = 'text-center text-5xl text-sky-800 font-bold md:text-left md:text-7xl lg:text-center';
+   const shadow = { boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 13px 5px' };
+   const priceClass = 'bg-cyan-500 text-center font-medium';
 
    return (
       <main className="lg:flex pr-5 py-6">
@@ -33,7 +31,7 @@ export const AboutSectionLayout = ({ heading, text, iOne, iTwo, iThree, iFour, i
             </div>
 
             <div className="mt-10 mb-4 ">
-               <SwiperAbout iOne={iOne} iTwo={iTwo} iThree={iThree} iFour={iFour} iFive={iFive} />
+               <SwiperAbout images={images} />
             </div>
 
             <p className={`${priceClass}`}>{priceOne}</p>

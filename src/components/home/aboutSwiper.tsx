@@ -5,22 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Scrollbar, Navigation } from 'swiper/modules';
 
 export interface AboutImages {
-   iOne: string;
-   iTwo: string;
-   iThree: string;
-   iFour: string;
-   iFive: string;
+   images: string[];
 }
 
-export const SwiperAbout = ({ iOne, iTwo, iThree, iFour, iFive }: AboutImages) => {
-   const slideData = [
-      { src: iOne, alt: 'Apartmani Jahorina' },
-      { src: iTwo, alt: 'Apartmani Jahorina' },
-      { src: iThree, alt: 'Apartmani Jahorina' },
-      { src: iFour, alt: 'Apartmani Jahorina' },
-      { src: iFive, alt: 'Apartmani Jahorina' },
-   ];
-
+export const SwiperAbout = ({ images }: AboutImages) => {
    return (
       <Swiper
          spaceBetween={10}
@@ -37,9 +25,9 @@ export const SwiperAbout = ({ iOne, iTwo, iThree, iFour, iFive }: AboutImages) =
             },
          }}
       >
-         {slideData.map((slide, index) => (
+         {images.map((image, index) => (
             <SwiperSlide key={index}>
-               <img src={slide.src} alt={slide.alt} />
+               <img src={image} alt="Apartmani Jahorina" />
             </SwiperSlide>
          ))}
       </Swiper>
