@@ -27,7 +27,7 @@ export const CounterUp = () => {
 
    return (
       <div className="counter p-7 lg:p-10 relative" ref={counterSectionRef}>
-         <div className="absolute w-full h-10 bg-no-repeat left-0 rotate-180 -bottom-4 bg-[url(/images/rotten-curve-5.png)]" />
+         <div className="absolute w-full h-10 bg-no-repeat left-0 rotate-180 -bottom-4 bg-[url(/images/rotten-curve-5.png)] z-30" />
 
          <div className="container mx-auto">
             <div className={`${counterContentClass}`}>

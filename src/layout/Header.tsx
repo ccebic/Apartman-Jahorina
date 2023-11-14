@@ -8,7 +8,7 @@ import { NavHeaderLink } from './components/NavLinks';
 export const Header = () => {
    const [menuOpen, setMenuOpen] = useState(false);
    const navClass =
-      'menu fixed h-screen w-full top-0   flex items-center justify-end  z-10 pr-24 sm:w-4/5 bg-gradient-to-b  from-blue-600/[0.9] to-sky-600/[0.9] transition-all duration-200';
+      'menu fixed h-screen w-full top-0   flex items-center justify-end  z-40 pr-24 sm:w-4/5 bg-gradient-to-b  from-blue-600/[0.9] to-sky-600/[0.9] transition-all duration-200';
    const activeNavClass = menuOpen ? 'lg:left-[-45%] left-[-20%] md:left-[-35%] xl:left-[-50%]' : '-left-full';
 
    const toggleMenu = () => setMenuOpen((menuOpen) => !menuOpen);
@@ -17,7 +17,7 @@ export const Header = () => {
       <header className="py-3 bg-sky-500 shadow-md">
          <div className="nav container mx-auto px-2">
             <main className="flex justify-between">
-               <div className="cursor-pointer hover:-translate-y-2 hover:drop-shadow-md duration-300 z-20">
+               <div className="cursor-pointer hover:-translate-y-2 hover:drop-shadow-md duration-300 z-50">
                   <img src={Logo} className="lg:w-20 lg:h-20 w-14 h-14" alt="Vila Marina Jahorina Logo" />
                </div>
 
