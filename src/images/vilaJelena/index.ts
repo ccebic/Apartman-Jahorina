@@ -1,4 +1,3 @@
-import Bcg from './bcg-3.webp';
 import Ione from './jelena8-min.webp';
 import Itwo from './jelena9-min.webp';
 import Ifive from './jelena6-min.webp';
@@ -15,4 +14,4 @@ const images = [
     Ithree,
 ]
 
-export { BigPhoto, Bcg, images }
+export { BigPhoto, images }

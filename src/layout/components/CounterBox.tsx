@@ -6,7 +6,7 @@ type CounterBoxProps = {
    children?: React.ReactNode;
 };
 
-export const CounterBox = ({ icon, text, units = 'km', children }: CounterBoxProps) => {
+export const CounterBox = ({ icon, text, units, children }: CounterBoxProps) => {
    const boxClass =
       'box flex flex-col text-white items-center justify-center gap-2 px-1 bg-sky-950 w-[200px] h-[110px] rounded-lg border-b-8 border-cyan-500';
 

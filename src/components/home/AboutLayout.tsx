@@ -8,7 +8,6 @@ interface AboutSectionProp extends AboutImages {
    priceTwo: string;
    bigImage: string;
 }
-
 export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
    const headingTextClass = 'text-center text-5xl text-sky-800 font-bold md:text-left md:text-7xl lg:text-center';
    const shadow = { boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 13px 5px' };
@@ -24,6 +23,7 @@ export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImag
             <div className="flex flex-col gap-5 text-black mb-30px backdrop-blur py-5 px-1 rounded-lg" style={shadow}>
                <h2 className={headingTextClass}>{heading}</h2>
                <BoxesAbout />
+
                <div className="font-bold leading-7 overflow-y-scroll lg:text-xl h-[400px] lg:[300px] tracking-widest">
                   <p className="px-3">{text}</p>
                </div>
