@@ -13,7 +13,7 @@ export const Button = ({ children, href, outline, decoration }: ButtonProps) => 
    const buttonFill = 'bg-cyan-500 relative px-6 lg:py-3';
 
    return (
-      <a href={href} className={`${outline === false ? buttonFill : buttonOutline} ${button}`}>
+      <a href={href} className={`${button} ${outline ? buttonOutline : buttonFill} `}>
          {children}
          {decoration && <span className={buttonDecoration} />}
       </a>

@@ -1,12 +1,7 @@
 import { Curve } from '../components/home/Curve';
-import background from '../images/background4.webp';
-import { Button, AboutJelena } from '../components/home/index';
+import { Button, AboutJelena, CounterUp } from '../components/home/index';
 
 export const HomePage = () => {
-   const homeStyle = {
-      backgroundImage: `url(${background})`,
-   };
-
    const textShadow = {
       textShadow:
          '1px 1px 1px rgb(10, 81, 128), 1px 2px 1px rgb(10, 81, 128), 1px 3px 1px rgb(10, 81, 128), 1px 4px 1px rgb(10, 81, 128), 1px 5px 1px rgb(10, 81, 128), 1px 6px 1px rgb(10, 81, 128), 1px 7px 1px rgb(10, 81, 128), 1px 8px 1px rgb(10, 81, 128), 1px 9px 1px rgb(10, 81, 128), 1px 10px 1px rgb(10, 81, 128), 1px 18px 6px rgba(0, 0, 0, 0.329)',
@@ -20,7 +15,7 @@ export const HomePage = () => {
 
    return (
       <div>
-         <main className="relative bg-sky-500 h-screen bg-cover bg-center" style={homeStyle}>
+         <main className="relative bg-sky-500 h-screen bg-cover bg-center bg-[url(/images/background4.webp)]">
             <div className="absolute top-0 left-0 h-full w-full bg-black/[0.3]"></div>
             <div className="cointainer flex flex-col justify-center items-center h-[90vh]">
                <div className="relative">
@@ -53,6 +48,7 @@ export const HomePage = () => {
             <Curve />
          </main>
          <AboutJelena />
+         <CounterUp />
       </div>
    );
 };
