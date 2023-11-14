@@ -1,14 +1,7 @@
-import { Curve } from './Curve';
-import { AboutSectionLayout } from './aboutLayout';
-import Bcg from '../../images/vilaJelena/bcg-3.webp';
-import Ione from '../../images/vilaJelena/jelena8-min.webp';
-import Itwo from '../../images/vilaJelena/jelena9-min.webp';
-import Ifive from '../../images/vilaJelena/jelena6-min.webp';
-import Ifour from '../../images/vilaJelena/jelena11-min.webp';
-import Ithree from '../../images/vilaJelena/jelena10-min.webp';
-import BigPhoto from '../../images/vilaJelena/jelena13-min.webp';
+import { AboutLayout, Curve } from '.';
+import { images, BigPhoto, Bcg } from '../../images/vilaJelena';
 
-export const AboutSectionJelena = () => {
+export const AboutJelena = () => {
    const background = {
       backgroundImage: `url(${Bcg})`,
    };
@@ -19,14 +12,10 @@ export const AboutSectionJelena = () => {
    return (
       <main style={background} className="bg-cover bg-center relative bg-no-repeat">
          <div className="container p-3 mx-auto">
-            <AboutSectionLayout
+            <AboutLayout
                heading="Vila Jelena"
                text={textForJelena}
-               iOne={Ione}
-               iTwo={Itwo}
-               iThree={Ithree}
-               iFour={Ifour}
-               iFive={Ifive}
+               images={images}
                priceOne="Price from 70€/night (Apartment)"
                priceTwo="Price from 50€/night (Double room)"
                bigImage={BigPhoto}
