@@ -1,4 +1,4 @@
-import { AboutImages } from './aboutSwiper';
+import { AboutImages } from './AboutSwiper';
 import { AboutSwiper, BoxesAbout, Button } from '.';
 
 interface AboutSectionProp extends AboutImages {

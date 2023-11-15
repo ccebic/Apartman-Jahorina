@@ -1,5 +1,5 @@
 import { Curve } from '../components/home/Curve';
-import { Button, AboutJelena, CounterUp } from '../components/home/index';
+import { Button, AboutJelena, CounterUp, RoomsPrices } from '../components/home/index';
 
 export const HomePage = () => {
    const textShadow = {
@@ -17,7 +17,7 @@ export const HomePage = () => {
       <div>
          <main className="relative bg-sky-500 h-screen bg-cover bg-center bg-[url(/images/background4.webp)]">
             <div className="absolute top-0 left-0 h-full w-full bg-black/[0.3]"></div>
-            <div className="cointainer flex flex-col justify-center items-center h-[90vh]">
+            <div className="container mx-auto flex flex-col justify-center items-center h-[90vh]">
                <div className="relative">
                   <span className={`-left-[27px] ${decorationClass}`}></span>
                   <span className="text-xl md:text-3xl text-white font-bold">Welcome to our complex</span>
@@ -49,6 +49,7 @@ export const HomePage = () => {
          </main>
          <AboutJelena />
          <CounterUp />
+         <RoomsPrices />
       </div>
    );
 };
