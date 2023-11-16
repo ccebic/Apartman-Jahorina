@@ -1,5 +1,4 @@
-import { Curve } from '../components/home/Curve';
-import { Button, AboutJelena, CounterUp, RoomsPrices } from '../components/home/index';
+import { Button, AboutJelena, Curve, CounterUp, AboutMarina, RoomsPrices } from '../components/home/index';
 
 export const HomePage = () => {
    const textShadow = {
@@ -49,7 +48,8 @@ export const HomePage = () => {
          </main>
          <AboutJelena />
          <CounterUp />
-         <RoomsPrices />
+         <AboutMarina />
+         <RoomsPrices /> 
       </div>
    );
 };

@@ -5,18 +5,19 @@ interface AboutSectionProp extends AboutImages {
    text: string;
    heading: string;
    priceOne: string;
-   priceTwo: string;
+   priceTwo?: string;
    bigImage: string;
+   reverse?: boolean;
 }
-export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImage }: AboutSectionProp) => {
+export const AboutLayout = ({ heading, text, images, priceOne, priceTwo, bigImage, reverse }: AboutSectionProp) => {
    const headingTextClass = 'text-center text-5xl text-sky-800 font-bold md:text-left md:text-7xl lg:text-center';
    const shadow = { boxShadow: 'rgba(0, 0, 0, 0.3) 0px 0px 13px 5px' };
    const priceClass = 'bg-cyan-500 text-center font-medium';
 
    return (
-      <main className="lg:flex pr-5 py-6">
+      <main className={`lg:flex pr-5 py-6 ${reverse && 'flex-row-reverse'}`}>
          <div className="flex-1 hidden lg:flex items-center justify-center">
-            <img src={bigImage} alt="Apartmani Jahorina" />
+            <img src={bigImage} alt="Apartmani Jahorina" className="w-[590px] h-[787px]" />
          </div>
 
          <div className="flex-1 overflow-hidden">

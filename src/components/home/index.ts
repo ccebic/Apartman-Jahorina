@@ -5,5 +5,8 @@ export { AboutJelena } from './AboutJelena';
 export { AboutLayout } from './AboutLayout';
 export { AboutSwiper } from './AboutSwiper';
 export { BoxesAbout } from './BoxAbout.tsx';
+export { AboutMarina } from './AboutMarina.tsx';
 export { RoomsPrices } from './RoomsPrices.tsx';
+
+
 
