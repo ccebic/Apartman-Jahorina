@@ -5,7 +5,7 @@ export const Apartments = () => {
    const { apartments, isLoading, error } = useApartment();
 
    if (isLoading) return <div className="text-black text-5xl">Loading...</div>;
-   if (error) return <div className="text-black text-5xl">Something went wrong, try again later...</div>;
+   if (error) return <div className="text-black text-5xl text-center">Something went wrong with this section, try again later...</div>;
 
    return (
       <main className="py-10">
