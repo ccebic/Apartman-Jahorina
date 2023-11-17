@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from 'react';
 import { faUser, faPersonSkiing, faMountain, faStar } from '@fortawesome/free-solid-svg-icons';
 
 import CountUp from 'react-countup';
-import { CounterBox } from '../../layout/components/CounterBox';
+import { CounterBox } from '../../layout/components';
 
 export const CounterUp = () => {
    const counterContentClass =
