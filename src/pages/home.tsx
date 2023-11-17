@@ -1,5 +1,5 @@
 import { Curve } from '../components/home/Curve';
-import { Button, AboutJelena, CounterUp, AboutMarina } from '../components/home/index';
+import { Button, AboutJelena, CounterUp, AboutMarina, Reviews } from '../components/home/index';
 
 export const HomePage = () => {
    const textShadow = {
@@ -50,6 +50,7 @@ export const HomePage = () => {
          <AboutJelena />
          <CounterUp />
          <AboutMarina />
+         <Reviews />
       </div>
    );
 };
