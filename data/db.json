@@ -1,48 +1,41 @@
 {
-    "apartments": 
-[
-
-            {
-                "id": 1,
-                "price": 70,
-                "minGuests": 1,
-                "maxGuests": 4,
-                "expanded": true,
-                "type": "apartment",
-                "alt": "Vila Jahorina",
-                "apart": "apartment vila jelena",
-                "href": "https://apartmani-jahorina.com/",
-                "img": "https://apartmani-jahorina.com/images/jelena/jelena5-min.webp"
-            }
-          ,
-
-            {
-                "id": 2,
-                "price": 50,
-                "minGuests": 1,
-                "maxGuests": 2,
-                "type": "room",
-                "expanded": false,
-                "alt": "Vila Jahorina",
-                "apart": "room vila jelena",
-                "href": "https://apartmani-jahorina.com/",
-                "img": "https://apartmani-jahorina.com/images/jelena/jelena3-min.webp"
-            }
-        ,
-
-            {
-                "id": 3,
-                "price": 350,
-                "minGuests": 1,
-                "maxGuests": 15, 
-                "type": "villa",
-                "expanded": false,
-                "alt": "Vila Jahorina",
-                "apart": "vila marina",
-                "href": "https://apartmani-jahorina.com/",
-                "img": "https://apartmani-jahorina.com/images/marina/marina9-min.webp"
-            }
-      
-    
-    ]
+ "apartments": 
+              [
+                {
+                    "id": 1,
+                    "price": 70,
+                    "minGuests": 1,
+                    "maxGuests": 4,
+                    "expanded": true,
+                    "type": "apartment",
+                    "alt": "Vila Jahorina",
+                    "apartment": "apartment vila jelena",
+                    "href": "https://apartmani-jahorina.com/",
+                    "img": "https://apartmani-jahorina.com/images/jelena/jelena5-min.webp"
+                },
+                {
+                    "id": 2,
+                    "price": 50,
+                    "minGuests": 1,
+                    "maxGuests": 2,
+                    "type": "room",
+                    "expanded": false,
+                    "alt": "Vila Jahorina",
+                    "apartment": "room vila jelena",
+                    "href": "https://apartmani-jahorina.com/",
+                    "img": "https://apartmani-jahorina.com/images/jelena/jelena3-min.webp"
+                },
+                {
+                    "id": 3,
+                    "price": 350,
+                    "minGuests": 1,
+                    "maxGuests": 15, 
+                    "type": "villa",
+                    "expanded": false,
+                    "alt": "Vila Jahorina",
+                    "apartment": "vila marina",
+                    "href": "https://apartmani-jahorina.com/",
+                    "img": "https://apartmani-jahorina.com/images/marina/marina9-min.webp"
+                }
+              ]
 }
