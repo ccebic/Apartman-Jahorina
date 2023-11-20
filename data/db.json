@@ -68,6 +68,11 @@
             "id": 6,
             "name": "Aleksa L.",
             "text": "I am thrilled with my stay at this villa - the interior is modernly designed, everything was clean and tidy, and the staff very kind. I would recommend this place to anyone who wants to relax in nature."
+         },
+         {
+            "id": 7,
+            "name": "Petar S.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet mattis vulputate enim nulla aliquet porttitor. Penatibus et magnis dis."
          }
     ]
 }
