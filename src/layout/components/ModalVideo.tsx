@@ -1,6 +1,6 @@
 import ReactDom from 'react-dom';
 
-import VideoAbout from '../../video/vila-video.mp4';
+import VideoAbout from '../../../public/video/vila-video.mp4';
 
 export const ModalVideo = ({ open, onClose }: any) => {
    if (!open) return null;
