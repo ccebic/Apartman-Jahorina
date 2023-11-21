@@ -1,5 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { ApartmentProp } from '../../api/apartment';
 
@@ -9,9 +10,9 @@ export const Apartment = ({ href, img, alt, price, apartment, minGuests, maxGues
 
    return (
       <div className={`group relative h-[400px] flex items-center rounded-xl overflow-hidden ${expanded ? 'lg:flex-[2]' : 'lg:flex-1'}`}>
-         <a href={href}>
+         <Link to="/reservation">
             <img src={img} alt={alt} className="h-full group-hover:scale-110 duration-300" />
-         </a>
+         </Link>
 
          <div className={textContentClass}>
             <p className="uppercase">from {price}€/night</p>
