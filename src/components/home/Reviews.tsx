@@ -36,12 +36,11 @@ export const Reviews = () => {
             <h1 className="text-center font-oleo text-4xl text-sky-800 lg:text-6xl">What have the guests said about us</h1>
 
             <div className="p-4 shadow-2xl rounded-xl text-center mt-4 lg:mt-7 lg:p-10">
-
                <p className="font-medium text-xl opacity-75">{item?.text}</p>
                <h4 className="text-sky-800 my-3 text-lg lg:font-medium">{item?.name}</h4>
-               
+
                <div className="flex items-center gap-3 justify-center text-sky-800 text-2xl">
-              <FontAwesomeIcon
+                  <FontAwesomeIcon
                      icon={faArrowLeft}
                      className="cursor-pointer active:scale-150 duration-75"
                      onClick={() => prevReview()}
