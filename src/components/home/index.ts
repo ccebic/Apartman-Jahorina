@@ -8,6 +8,7 @@ export { AboutSwiper } from './AboutSwiper';
 export { BoxesAbout } from './BoxAbout.tsx';
 export { Apartments } from './Apartments.tsx';
 export { AboutMarina } from './AboutMarina.tsx';
+export { AboutJahorina } from './AboutJahorina.tsx';
 
 
 
