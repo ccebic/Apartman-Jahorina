@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {},
     fontFamily: {
-      oleo: ["Oleo Script", "cursive"]
+      oleo: ["Oleo Script", "cursive"],
     }
   },
   plugins: [],

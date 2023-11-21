@@ -12,7 +12,7 @@ export const FooterLink = ({ href, text }: LinkProp) => (
    </li>
 );
 
-export const NavHeaderLink: React.FC<LinkProp> = ({ href, text }) => (
+export const NavHeaderLink = ({ href, text }: LinkProp) => (
    <li className="nav-item">
       <a className="nav-link flex group items-center gap-3 relative font-medium tracking-[4px]" href={href}>
          <div className="absolute h-1 left-0 -bottom-1 duration-300 group-hover:w-full w-0 bg-blue-900" />
