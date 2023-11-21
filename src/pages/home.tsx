@@ -1,3 +1,4 @@
+import { ContactLocation } from '../components/home/ContactLocation';
 import { Curve } from '../components/home/Curve';
 import { Button, AboutJelena, CounterUp, Reviews, AboutMarina, Apartments } from '../components/home/index';
 
@@ -52,6 +53,7 @@ export const HomePage = () => {
          <AboutMarina />
          <Apartments />
          <Reviews />
+         <ContactLocation />
       </div>
    );
 };

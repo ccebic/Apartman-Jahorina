@@ -30,11 +30,11 @@ export const Footer = () => {
                   </ul>
                </div>
 
-               <ul className="flex justify-center items-center gap-7">
+               <div className="flex justify-center items-center gap-7">
                   <SocialIcon href="facebook link" icon={faFacebook} className="text-cyan-500" />
                   <SocialIcon href="facebook link" icon={faInstagram} className="text-cyan-500" />
                   <SocialIcon href="facebook link" text="B." className="text-[38px] text-cyan-500  font-bold relative top-[-3px]" />
-               </ul>
+               </div>
             </div>
          </div>
          <div className="flex flex-col md:flex-row md:justify-between  justify-center py-3 px-2 bg-zinc-900 items-center text-white font-medium">
