@@ -1,11 +1,12 @@
 interface FormItemProp {
-   labelText: string;
+   register?: any;
    inputId: string;
+   labelText: string;
    inputType: string;
    inputName: string;
 }
 
-export const FormItem = ({ labelText, inputId, inputType, inputName }: FormItemProp) => {
+export const FormItem = ({ labelText, inputId, inputType, inputName, register }: FormItemProp) => {
    return (
       <div>
          <main className="flex flex-col gap-3">
@@ -14,7 +15,13 @@ export const FormItem = ({ labelText, inputId, inputType, inputName }: FormItemP
             </label>
 
             {inputType === 'select' ? (
-               <select id={inputId} required name={inputName} className="text-black pl-3 border-b border-b-black/[.20] text-lg">
+               <select
+                  id={inputId}
+                  required
+                  name={inputName}
+                  className="text-black pl-3 border-b border-b-black/[.20] text-lg"
+                  {...register(inputName)}
+               >
                   <option value="" />
 
                   <option value="Vila Jelena room" className="room-option">
@@ -36,6 +43,7 @@ export const FormItem = ({ labelText, inputId, inputType, inputName }: FormItemP
                   required
                   name={inputName}
                   className="text-black pl-3 border-b border-b-black/[.20] text-lg"
+                  {...register(inputName)}
                />
             )}
          </main>

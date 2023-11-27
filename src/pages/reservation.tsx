@@ -1,23 +1,21 @@
 import { Link } from 'react-router-dom';
+import { useForm } from 'react-hook-form';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { FormItem } from '../layout/components';
 
 export const ReservationPage = () => {
-   interface formDataType {
-      [key: string]: FormDataEntryValue;
-   }
+   const {
+      register,
+      handleSubmit,
+      formState: { errors },
+      reset,
+   } = useForm();
 
-   const responseBody: formDataType = {};
-
-   const onSubmitHandler = (e: React.FormEvent<HTMLFormElement>) => {
-      e.preventDefault();
-      const formData = new FormData(e.currentTarget as HTMLFormElement);
-      formData.forEach((value, property: string) => (responseBody[property] = value));
-      console.log(
-         `Check in: ${responseBody.checkIn}, Check out: ${responseBody.checkOut}, Guests: ${responseBody.guests}, Accommodation: ${responseBody.accommodation}, Email: ${responseBody.email}, Name: ${responseBody.name}`
-      );
+   const onSubmit = (data: any) => {
+      console.log(data);
+      reset();
    };
 
    return (
@@ -28,18 +26,24 @@ export const ReservationPage = () => {
             <main className="bg-white px-5 py-5 md:w-[500px]">
                <h2 className="uppercase text-center text-3xl font-bold text-sky-600 mb-4">reservation</h2>
 
-               <form className="flex flex-col gap-4" onSubmit={onSubmitHandler}>
-                  <FormItem labelText="Check in:" inputId="dateIn" inputType="date" inputName="checkIn" />
+               <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmit)}>
+                  <FormItem labelText="Check in:" inputId="dateIn" inputType="date" inputName="checkIn" register={register} />
 
-                  <FormItem labelText="Check out:" inputId="dateOut" inputType="date" inputName="checkOut" />
+                  <FormItem labelText="Check out:" inputId="dateOut" inputType="date" inputName="checkOut" register={register} />
 
-                  <FormItem labelText="Number of guests:" inputId="guests" inputType="number" inputName="guests" />
+                  <FormItem labelText="Number of guests:" inputId="guests" inputType="number" inputName="guests" register={register} />
 
-                  <FormItem labelText="Accommodation" inputId="accommodation" inputType="select" inputName="accommodation" />
+                  <FormItem
+                     labelText="Accommodation"
+                     inputId="accommodation"
+                     inputType="select"
+                     inputName="accommodation"
+                     register={register}
+                  />
 
-                  <FormItem labelText="E-mail adress" inputId="email" inputType="email" inputName="email" />
+                  <FormItem labelText="E-mail adress" inputId="email" inputType="email" inputName="email" register={register} />
 
-                  <FormItem labelText="Name:" inputId="name" inputType="text" inputName="name" />
+                  <FormItem labelText="Name:" inputId="name" inputType="text" inputName="name" register={register} />
 
                   <button type="submit" className="py-1 px-5 rounded-md uppercase text-white bg-sky-800 self-center">
                      reserve
